@@ -28,7 +28,7 @@ task :install do
     end
   end
 
-  # Download .profile gist from github
+  # Link .profile from dropbox
   puts "linking .profile from dropbox"
   system %Q{ln -s "$HOME/Dropbox/.profile" "$HOME/.profile"}
 
