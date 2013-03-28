@@ -2,7 +2,7 @@ require 'rake'
 
 desc "install the dot files into user's home directory"
 task :install do
-  replace_all = true 
+  replace_all = false
   puts "file #{Dir['*']}" 
   Dir['*'].each do |file|
     next if %w[Rakefile README LICENSE id_dsa.pub].include? file
@@ -35,7 +35,7 @@ task :install do
 end
 
 def replace_file(file)
-  system %Q{rm "$HOME/.#{file}"}
+  system %Q{rm -rf "$HOME/.#{file}"}
   link_file(file)
 end
 
