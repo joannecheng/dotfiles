@@ -2,7 +2,8 @@ require 'rake'
 
 desc "install the dot files into user's home directory"
 task :install do
-  replace_all = false
+  replace_all = true 
+  puts "file #{Dir['*']}" 
   Dir['*'].each do |file|
     next if %w[Rakefile README LICENSE id_dsa.pub].include? file
     
@@ -31,12 +32,6 @@ task :install do
   # Download .profile gist from github
   puts "linking .profile from dropbox"
   system %Q{ln -s "$HOME/Dropbox/.profile" "$HOME/.profile"}
-
-  # Need to do this to make vim use RVM's ruby version
-  puts "Moving zshenv to zshrc"
-  system %Q{sudo mv /etc/zshenv /etc/zshrc}
-
-  system %Q{mkdir ~/.tmp}
 end
 
 def replace_file(file)
