@@ -1,0 +1,8 @@
+.DS_STORE
+.svn
+*~
+tags
+log/
+vim_runtime/.netrwhist
+
+
