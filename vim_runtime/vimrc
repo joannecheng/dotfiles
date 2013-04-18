@@ -330,8 +330,8 @@ map <leader>ba :1,300 bd!<cr>
 " Use the arrows to something usefull
 map <Up> :bn<cr>
 map <Down> :bp<cr>
-nnoremap <Left> :bp<cr>
-nnoremap <Right> :bp<cr>
+" nnoremap <Left> :bp<cr>
+" nnoremap <Right> :bp<cr>
 
 " Tab configuration
 map <leader>tn :tabnew! %<cr>
@@ -547,7 +547,7 @@ au FileType javascript setl fen
 au FileType javascript setl nocindent
 
 au FileType javascript imap <c-t> AJS.log();<esc>hi
-au FileType javascript imap <c-a> alert();<esc>hi
+au FileType javascript imap <c-a> console.log();<esc>hi
 
 au FileType javascript inoremap <buffer> $r return 
 au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
@@ -593,8 +593,12 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
 " Set number
 set number
+
+" Map nohl to <leader>space
+noremap <leader><space><space> :nohl <return>
 
 "Quickly open a buffer for scripbble
 map <leader>q :e ~/buffer<cr>
@@ -608,7 +612,7 @@ if MySys() == "mac"
       set fuoptions=maxvert,maxhorz
       au GUIEnter * set fullscreen
     endif
-endif
+end
 
 call pathogen#infect()
 
