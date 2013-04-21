@@ -1,0 +1,12 @@
+[submodule "vim_runtime/bundle/vim-coffee-script"]
+	path = vim_runtime/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "vim_runtime/bundle/vim-rails"]
+	path = vim_runtime/bundle/vim-rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule "vim_runtime/bundle/vim-rake"]
+	path = vim_runtime/bundle/vim-rake
+	url = git@github.com:tpope/vim-rake.git
+[submodule "vim_runtime/bundle/vim-surround"]
+	path = vim_runtime/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
