@@ -572,6 +572,14 @@ if MySys() == "mac"
       au GUIEnter * set fullscreen
     endif
 end
+set wildignore+=*.swp,*.zip,*.pyc
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\v[\/]\.(git)$',
+      \ 'file': '\v\.(pyc)$',
+\ }
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Install and configure Pathogen bundles
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call pathogen#infect()
 
