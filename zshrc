@@ -34,15 +34,14 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'$PATH
+#export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:'$PATH
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
-source ~/.profile
+source ~/.zshrc.local
 
 # Customize to your needs...
 
 # recommended by brew doctor
 
-eval "$(rbenv init -)"
 # DO NOT EDIT BELOW THIS LINE
 
