@@ -107,6 +107,11 @@ nnoremap Y y$
 " vim:set ft=vim et sw=2:
 
 """""""""""""""""""""""""""""
+" => Leader Mappings
+"""""""""""""""""""""""""""""
+let mapleader = ","
+
+"""""""""""""""""""""""""""""
 " => File Types 
 """""""""""""""""""""""""""""
 au BufNewFile,BufRead *.hbs set syntax=html
