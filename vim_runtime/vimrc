@@ -160,6 +160,9 @@ set grepprg=/bin/grep\ -nH
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
+" Tab completion
+imap <Tab> <C-P>
+
 " Set number
 set number
 
