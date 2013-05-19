@@ -16,6 +16,3 @@
 [submodule "vim_runtime/bundle/ctrlp"]
 	path = vim_runtime/bundle/ctrlp
 	url = git@github.com:kien/ctrlp.vim.git
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = git@github.com:vim-ruby/vim-ruby.git
