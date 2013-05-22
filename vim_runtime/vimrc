@@ -72,8 +72,6 @@ if !empty(&viminfo)
   set viminfo^=!
 endif
 
-set noundofile
-
 let s:dir = has('win32') ? '$APPDATA/Vim' : match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
 if isdirectory(expand(s:dir))
   if &directory =~# '^\.,'
@@ -86,9 +84,8 @@ if isdirectory(expand(s:dir))
     let &undodir = expand(s:dir) . '/undo//,' . &undodir
   endif
 endif
-if exists('+undofile')
-  set undofile
-endif
+set noundofile
+
 
 " Allow color schemes to do bright colors without forcing bold.
 if &t_Co == 8 && $TERM !~# '^linux'
@@ -119,6 +116,24 @@ let mapleader = ","
 au BufNewFile,BufRead *.hbs set syntax=html
 au BufNewFile,BufRead *.jbuilder set syntax=ruby
 au BufNewFile,BufRead *.rabl set syntax=ruby
+
+"""""""""""""""""""""""""""""
+" => Navigation
+"""""""""""""""""""""""""""""
+map <space> /
+
+" Buffer navigation
+map <Up> :bn<cr>
+map <Down> :bp<cr>
+
+" Close all buffers
+map <leader>ba :1,300 bd!<cr>
+
+" Tab navigation
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 """"""""""""""""""""""""""""""
 " => Python section
