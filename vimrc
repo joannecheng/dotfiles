@@ -5,6 +5,7 @@ set runtimepath=~/.vim_runtime,~/vim_runtime/after,\$VIMRUNTIME
 source ~/.vim_runtime/vimrc
 helptags ~/.vim_runtime/doc
 syntax enable
-colorscheme Tomorrow-Night
+set background=dark
+colorscheme solarized
 
 filetype plugin indent on

@@ -5,7 +5,7 @@
 if exists('g:loaded_sensible') || &compatible
   finish
 else
-  let g:loaded_sensible = 1
+  let g:loaded_sensible = 2
 endif
 
 if has('autocmd')
@@ -104,6 +104,12 @@ nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 " Make Y consistent with C and D.  See :help Y.
 nnoremap Y y$
+
+" For wrapped lines, jump to the next row rather than the next line
+nnoremap j gj
+vnoremap j gj
+nnoremap k gk
+vnoremap k gk
 
 " vim:set ft=vim et sw=2:
 
