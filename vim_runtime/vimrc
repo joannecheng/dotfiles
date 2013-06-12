@@ -111,6 +111,10 @@ vnoremap j gj
 nnoremap k gk
 vnoremap k gk
 
+" Tab movement
+noremap <C-e> gT
+noremap <C-t> gt
+
 " vim:set ft=vim et sw=2:
 
 """""""""""""""""""""""""""""
@@ -234,6 +238,12 @@ let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]\.(git)$',
       \ 'file': '\v\.(pyc)$',
 \ }
+
+" Remove delay after pressing escape and clearing the visual selection
+set timeoutlen=1000 ttimeoutlen=0
+
+set hlsearch
+set incsearch
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Install and configure Pathogen bundles
