@@ -31,3 +31,6 @@
 [submodule "vim_runtime/bundle/supertab"]
 	path = vim_runtime/bundle/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "vim_runtime/bundle/vim-javascript"]
+	path = vim_runtime/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
