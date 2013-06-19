@@ -238,6 +238,8 @@ let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]\.(git)$',
       \ 'file': '\v\.(pyc)$',
 \ }
+" Make CtrlP use ag to list the files. SO MUCH FASTER
+let g:ctrlp_user_commnad = 'ag %s -l --nocolor -g ""'
 
 " Remove delay after pressing escape and clearing the visual selection
 set timeoutlen=1000 ttimeoutlen=0
