@@ -120,6 +120,7 @@ noremap <C-t> gt
 " => Leader Mappings
 """""""""""""""""""""""""""""
 let mapleader = ","
+map ,w :w<cr>
 
 """""""""""""""""""""""""""""
 " => File Types 

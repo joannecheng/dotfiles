@@ -40,3 +40,6 @@
 [submodule "vim_runtime/bundle/vim-scala"]
 	path = vim_runtime/bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala.git
+[submodule "vim_runtime/bundle/nerdtree"]
+	path = vim_runtime/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
