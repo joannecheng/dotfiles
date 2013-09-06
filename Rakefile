@@ -31,7 +31,7 @@ task :install do
 
   # Link .profile from dropbox
   puts "linking .profile from dropbox"
-  system %Q{ln -s "$HOME/Dropbox/.profile" "$HOME/.profile"}
+  system %Q{ln -s "$HOME/Dropbox/.zshrc.local" "$HOME/.zshrc.local"}
 end
 
 def replace_file(file)
