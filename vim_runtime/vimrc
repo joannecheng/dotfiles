@@ -293,7 +293,7 @@ inoremap <Tab> <c-r>=Smart_TabComplete()<CR>
 set list listchars=tab:»·,trail:·
 
 " Set number
-set number
+set relativenumber
 
 " Save with <leader>w
 map <leader>w :w <return>
@@ -329,4 +329,7 @@ set smartcase
 " => Install and configure Pathogen bundles
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call pathogen#infect()
+
+" NERDTree
+map <C-n> :NERDTreeToggle <return>
 

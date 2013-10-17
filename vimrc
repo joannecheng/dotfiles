@@ -9,3 +9,4 @@ set background=dark
 syntax enable
 
 filetype plugin indent on
+hi LineNr ctermfg=magenta
