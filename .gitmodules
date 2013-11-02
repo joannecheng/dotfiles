@@ -43,3 +43,6 @@
 [submodule "vim_runtime/bundle/nerdtree"]
 	path = vim_runtime/bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim_runtime/bundle/vim-processing"]
+	path = vim_runtime/bundle/vim-processing
+	url = https://github.com/sophacles/vim-processing.git
