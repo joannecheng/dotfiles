@@ -45,3 +45,6 @@ source ~/.zshrc.local
 
 # DO NOT EDIT BELOW THIS LINE
 
+
+# added by travis gem
+[ -f /Users/joannecheng/.travis/travis.sh ] && source /Users/joannecheng/.travis/travis.sh
