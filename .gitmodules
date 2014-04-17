@@ -25,9 +25,6 @@
 [submodule "vim_runtime/bundle/vim-slim"]
 	path = vim_runtime/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
-[submodule "vim_runtime/bundle/vim-fugitive"]
-	path = vim_runtime/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim_runtime/bundle/supertab"]
 	path = vim_runtime/bundle/supertab
 	url = https://github.com/ervandew/supertab
