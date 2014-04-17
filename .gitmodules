@@ -52,3 +52,6 @@
 [submodule "vim_runtime/bundles/vim-arduino"]
 	path = vim_runtime/bundles/vim-arduino
 	url = https://github.com/tclem/vim-arduino.git
+[submodule "vim_runtime/bundle/vim-clojure-static"]
+	path = vim_runtime/bundle/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
