@@ -52,3 +52,6 @@
 [submodule "vim_runtime/bundle/vim-clojure-static"]
 	path = vim_runtime/bundle/vim-clojure-static
 	url = https://github.com/guns/vim-clojure-static.git
+[submodule "vim_runtime/bundle/vim-fireplace"]
+	path = vim_runtime/bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
