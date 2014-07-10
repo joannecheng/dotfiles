@@ -301,6 +301,11 @@ map <leader>w :w <return>
 " Map nohl to <leader>space
 noremap <leader><space><space> :nohl <return>
 
+" run make
+map <leader>m :make <return>
+
+map <leader>pr :!processing-java --run --sketch=`pwd` --output=/tmp/output --force <return>
+
 map <leader>pp :setlocal paste!<cr>
 
 map <leader>bb :cd ..<cr>
