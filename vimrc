@@ -7,6 +7,7 @@ helptags ~/.vim_runtime/doc
 colorscheme Tomorrow-Night
 set background=dark
 syntax enable
+set number
 
 filetype plugin indent on
 hi LineNr ctermfg=magenta

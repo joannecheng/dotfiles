@@ -304,7 +304,11 @@ noremap <leader><space><space> :nohl <return>
 " run make
 map <leader>m :make <return>
 
+" Run Processing sketches
 map <leader>pr :!processing-java --run --sketch=`pwd` --output=/tmp/output --force <return>
+
+" Run Scala Processing sketches with personal 'command line tool'
+map <leader>sc :!./sc % <return>
 
 map <leader>pp :setlocal paste!<cr>
 
