@@ -55,3 +55,6 @@
 [submodule "vim_runtime/bundle/vim-fireplace"]
 	path = vim_runtime/bundle/vim-fireplace
 	url = git://github.com/tpope/vim-fireplace.git
+[submodule "vim_runtime/bundle/elm.vim"]
+	path = vim_runtime/bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim.git
