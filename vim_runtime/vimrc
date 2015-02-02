@@ -298,6 +298,9 @@ set relativenumber
 " Save with <leader>w
 map <leader>w :w <return>
 
+" toggle relative numbering
+map <leader>n :set rnu <cr>
+
 " Map nohl to <leader>space
 noremap <leader><space><space> :nohl <return>
 
@@ -309,6 +312,9 @@ map <leader>pr :!processing-java --run --sketch=`pwd` --output=/tmp/output --for
 
 " Run Scala Processing sketches with personal 'command line tool'
 map <leader>sc :!./sc % <return>
+
+" Run current spec file
+map <leader>t :w<cr>:!bundle exec rspec %<return>
 
 map <leader>pp :setlocal paste!<cr>
 

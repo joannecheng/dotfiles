@@ -11,4 +11,6 @@ set number
 
 filetype plugin indent on
 hi LineNr ctermfg=magenta
-map <leader>m :! /Users/joannecheng/dev/tbot/snapengage/analytics/minify-js.sh<CR>
+
+nnoremap <Left> :normal i 💩 <CR>
+nnoremap <Right> :normal i 👊 <CR>
