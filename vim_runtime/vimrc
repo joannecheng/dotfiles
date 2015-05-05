@@ -313,6 +313,9 @@ map <leader>pr :!processing-java --run --sketch=`pwd` --output=/tmp/output --for
 " Run Scala Processing sketches with personal 'command line tool'
 map <leader>sc :!./sc % <return>
 
+" Run glslViewer
+map <leader>gv :!glslViewer % <return>
+
 " Run current spec file
 map <leader>t :w<cr>:!bundle exec rspec %<return>
 
