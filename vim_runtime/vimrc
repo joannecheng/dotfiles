@@ -316,6 +316,9 @@ map <leader>sc :!./sc % <return>
 " Run glslViewer
 map <leader>gv :!glslViewer % <return>
 
+" Run 'gulp build'
+map <leader>gp :!gulp build <return>
+
 " Run current spec file
 map <leader>t :w<cr>:!bundle exec rspec %<return>
 
