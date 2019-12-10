@@ -325,12 +325,6 @@ map <leader>t :w<cr>:!bundle exec rspec %<return>
 map <leader>pp :setlocal paste!<cr>
 
 map <leader>bb :cd ..<cr>
-if MySys() == "mac"
-    if has("gui_running")
-      set fuoptions=maxvert,maxhorz
-      au GUIEnter * set fullscreen
-    endif
-end
 set wildignore+=*.swp,*.zip,*.pyc
 let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]((tmp)|\.(git))$',

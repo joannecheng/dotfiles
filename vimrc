@@ -1,7 +1,7 @@
 
-set runtimepath=~/.vim_runtime,~/vim_runtime/after,\$VIMRUNTIME
-source ~/.vim_runtime/vimrc
-helptags ~/.vim_runtime/doc
+set runtimepath=~/dotfiles/vim_runtime,~/dotfiles/vim_runtime/after,\$VIMRUNTIME
+source ~/dotfiles/vim_runtime/vimrc
+helptags ~/dotfiles/vim_runtime/doc
 colorscheme Tomorrow-Night
 set background=dark
 syntax enable
